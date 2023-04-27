@@ -10,8 +10,12 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 input.onButtonPressed(Button.A, function () {
     radio.sendNumber(1)
+    basic.showIcon(IconNames.Yes)
+    basic.pause(200)
 })
 input.onButtonPressed(Button.B, function () {
     radio.sendNumber(0)
+    basic.showIcon(IconNames.Yes)
+    basic.pause(200)
 })
 radio.setGroup(76)
