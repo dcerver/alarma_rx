@@ -9,9 +9,9 @@ radio.onReceivedNumber(function (receivedNumber) {
     }
 })
 input.onButtonPressed(Button.A, function () {
-    radio.sendString("ON")
+    radio.sendNumber(1)
 })
 input.onButtonPressed(Button.B, function () {
-    radio.sendString("OFF")
+    radio.sendNumber(0)
 })
 radio.setGroup(76)
