@@ -10,12 +10,14 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 input.onButtonPressed(Button.A, function () {
     radio.sendNumber(1)
+    basic.clearScreen()
     basic.showIcon(IconNames.Yes)
     basic.pause(200)
     basic.clearScreen()
 })
 input.onButtonPressed(Button.B, function () {
     radio.sendNumber(0)
+    basic.clearScreen()
     basic.showIcon(IconNames.Yes)
     basic.pause(200)
     basic.clearScreen()
